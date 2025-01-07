@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-[My Project link](https://mohamedthayub.github.io/sass_proje/cts/) 
+[My Project link](https://mohamedthayub.github.io/sass_projects/) 
 
 **To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
 
