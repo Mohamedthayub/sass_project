@@ -12,16 +12,25 @@ body{
     font-family: "Karla", serif;
     background-color: $background_color;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
  
 form{
-    h1{
+    h2{
         margin-bottom: 12px;
     }
     background-color: $formColor;
-    width: 60vh;
+    width: 50vh;
     padding: 25px;
     border-radius: 15px;
-    
+
+    h2{
+        margin-bottom: 12px;
+    }
     .name_container{
         display: flex;
         justify-content: space-between;
@@ -67,22 +76,25 @@ form{
             display: flex;
             justify-content: space-around;
             border: 1px solid hsl(186, 15%, 59%);
-            border-radius: 3px;
-            padding: 2px;
+            border-radius: 4px;
+            padding: 3px;
             margin-top: 8px;
+            width: 45%;
             label{
+                margin-top: 3px;
                 margin-left: 10px;
             }
         }
         .second_ratio{
             display: flex;
             justify-content: space-around;
-            border: 1px solid black;
-            padding: 2px;
+            border: 1px solid hsl(186, 15%, 59%);
+            padding: 3px;
+            width: 45%;
             margin-top: 8px;
-            border-radius: 3px;
-        
+            border-radius: 4px;
             label{
+                margin-top: 3px;
                 margin-left: 10px;
             }
         }
@@ -99,8 +111,11 @@ form{
         textarea{
             border-radius: 3px;
             resize: none;
-            padding: 5px;
+            padding: 5px;            
+            border: 1px solid hsl(186, 15%, 59%);
+
         }
+        
     }
   
  .checkbox_container{
@@ -109,7 +124,18 @@ form{
     margin-top: 10px;
     label {
         margin-left: 12px;
-        margin-top: 5px;
+        margin-top: 4px;
     }
  }
+ button{
+    width: 100%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+    background-color: hsl(169, 82%, 27%);
+    margin-top: 10px;
+    font-weight: 700;
+    padding: 8px;
+}
 }
