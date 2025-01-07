@@ -102,6 +102,8 @@ form{
     }
     .textArea{
         margin-top: 15px;
+        display: flex;
+        flex-direction: column;
         textarea:focus{
             outline: none;    
         }

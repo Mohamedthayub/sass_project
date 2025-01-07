@@ -98,6 +98,8 @@ form .ratioContainer .second_ratio label {
 }
 form .textArea {
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 form .textArea textarea:focus {
   outline: none;
