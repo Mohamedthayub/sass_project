@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 60%, 98%);
+}
+body .heading {
+  display: flex;
+  justify-content: space-between;
+}
+body .heading .notification-container {
+  display: flex;
+}
+body .heading .mark {
+  font-size: 15px;
+}
+body .heading #number {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  display: inline;
+  border-radius: 4px;
+  padding: 2px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+body main {
+  background-color: hsl(0, 0%, 100%);
+  width: 500px;
+  height: 100vh;
+  box-shadow: 5px 10px 10px hsl(210, 60%, 98%);
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

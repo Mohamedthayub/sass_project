@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+$fontsize : 13px;
+$noficaionbackgroundcolor:hsl(219, 85%, 26%);
+$primarycolor: hsl(210, 60%, 98%);
+$containercolor :hsl(0,0%,100%);
+@mixin flexbetween(){
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: $fontsize;
+    background-color:$primarycolor;
+    
+    .heading{
+        @include flexbetween();
+        .notification-container{
+            display: flex;
+        }
+        .mark{
+            font-size: 15px;
+        }
+        #number{
+            background-color: $noficaionbackgroundcolor;
+            color: $white-color;
+            display: inline;
+            border-radius: 4px;
+            padding: 2px;
+            height: 30px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+    }
+    main{
+        background-color:$containercolor;
+        width: 500px;
+        height: 600px;
+        box-shadow: 5px 10px 10px hsl( 210, 60%, 98%) ;
+        padding: 20px;
+        border-radius: 20px;
+       
+    }  
+    
+}
