@@ -1,0 +1,16 @@
+@mixin flexcenter(){
+    display: flex;
+    justify-content: center;
+}
+@mixin flexcolumn(){
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexaround(){
+    display: flex;
+    justify-content: space-around;
+}
+@mixin flexbetween(){
+    display: flex;
+    justify-content: space-between;
+}
