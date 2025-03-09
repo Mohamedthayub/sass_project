@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-* {
-  margin: 0px;
-  padding: 0px;
+*, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -25,21 +25,25 @@ form {
 form h2 {
   margin-bottom: 12px;
 }
-form h2 {
-  margin-bottom: 12px;
+form .name_container, form .email_container, form .ratioContainer, form .textArea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
 }
 form .name_container {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+form input, form textarea {
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 3px;
 }
 form input {
   height: 3vmin;
-  font-size: 13px;
-  padding: 3px;
-  border-radius: 4px;
-  border: 1px solid hsl(186, 15%, 59%);
 }
-form input:focus {
+form input:focus, form textarea:focus {
   outline: none;
   font-size: 12px;
 }
@@ -48,29 +52,15 @@ form label {
   color: hsl(186, 15%, 59%);
   margin-bottom: 4px;
 }
-form .first_name {
+form .first_name, form .last_name {
   display: flex;
   flex-direction: column;
 }
-form .last_name {
-  display: flex;
-  flex-direction: column;
-}
-form .email_container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-}
-form .ratioContainer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-}
-form .ratioContainer .ratio_cont {
+form .ratio_cont {
   display: flex;
   justify-content: space-between;
 }
-form .ratioContainer .first_ratio {
+form .first_ratio, form .second_ratio {
   display: flex;
   justify-content: space-around;
   border: 1px solid hsl(186, 15%, 59%);
@@ -79,39 +69,9 @@ form .ratioContainer .first_ratio {
   margin-top: 8px;
   width: 45%;
 }
-form .ratioContainer .first_ratio label {
+form .first_ratio label, form .second_ratio label {
   margin-top: 3px;
   margin-left: 10px;
-}
-form .ratioContainer .second_ratio {
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid hsl(186, 15%, 59%);
-  padding: 3px;
-  width: 45%;
-  margin-top: 8px;
-  border-radius: 4px;
-}
-form .ratioContainer .second_ratio label {
-  margin-top: 3px;
-  margin-left: 10px;
-}
-form .textArea {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-}
-form .textArea textarea:focus {
-  outline: none;
-}
-form .textArea .textArea label {
-  margin-bottom: 10px;
-}
-form .textArea textarea {
-  border-radius: 3px;
-  resize: none;
-  padding: 5px;
-  border: 1px solid hsl(186, 15%, 59%);
 }
 form .checkbox_container {
   display: flex;
@@ -124,12 +84,11 @@ form .checkbox_container label {
 }
 form button {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   color: white;
   border-radius: 5px;
   border: 1px solid hsl(186, 15%, 59%);
   background-color: hsl(169, 82%, 27%);
   margin-top: 10px;
   font-weight: 700;
-  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
