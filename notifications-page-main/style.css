@@ -112,4 +112,7 @@ body .container .third-container .text-container .text1 h4, body .container .thi
 body .container .third-container .text-container .time p {
   margin-top: 5px;
   margin-left: 5px;
+}
+body .container .fourth-container {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
