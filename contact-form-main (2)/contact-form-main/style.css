@@ -1,94 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-*, body {
-  margin: 0;
-  padding: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Karla", serif;
+  font-family: "poppins", sans-serif;
   background-color: hsl(148, 38%, 91%);
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin-top: 150px;
 }
 
-form {
+.container {
   background-color: hsl(0, 0%, 100%);
-  width: 50vh;
+  width: 460px;
   padding: 25px;
   border-radius: 15px;
 }
-form h2 {
-  margin-bottom: 12px;
+.container .usernameContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
 }
-form .name_container, form .email_container, form .ratioContainer, form .textArea {
+.container .usernameContainer input {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+.container .usernameContainer input:focus {
+  outline: none;
+}
+.container .usernameContainer .lastName input {
+  width: 100%;
+}
+.container .emailcontainer {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+}
+.container .emailcontainer input {
+  margin-top: 8px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+.container .emailcontainer input:focus {
+  outline: none;
+}
+.container .main-ratio {
   margin-top: 15px;
 }
-form .name_container {
-  flex-direction: row;
+.container .ratio_cont {
+  display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-form input, form textarea {
-  border: 1px solid hsl(186, 15%, 59%);
-  border-radius: 4px;
-  font-size: 13px;
-  padding: 3px;
+.container .ratio_cont .first_ratio {
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius: 5px;
 }
-form input {
-  height: 3vmin;
+.container .ratio_cont .second_ratio {
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius: 5px;
 }
-form input:focus, form textarea:focus {
-  outline: none;
-  font-size: 12px;
-}
-form label {
-  font-size: 13px;
-  color: hsl(186, 15%, 59%);
-  margin-bottom: 4px;
-}
-form .first_name, form .last_name {
+.container .textcontainer {
   display: flex;
   flex-direction: column;
 }
-form .ratio_cont {
-  display: flex;
-  justify-content: space-between;
-}
-form .first_ratio, form .second_ratio {
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid hsl(186, 15%, 59%);
-  border-radius: 4px;
-  padding: 3px;
-  margin-top: 8px;
-  width: 45%;
-}
-form .first_ratio label, form .second_ratio label {
-  margin-top: 3px;
-  margin-left: 10px;
-}
-form .checkbox_container {
-  display: flex;
-  justify-content: start;
-  margin-top: 10px;
-}
-form .checkbox_container label {
-  margin-left: 12px;
-  margin-top: 4px;
-}
-form button {
+.container .textcontainer textarea {
   width: 100%;
-  padding: 10px;
-  color: white;
   border-radius: 5px;
-  border: 1px solid hsl(186, 15%, 59%);
-  background-color: hsl(169, 82%, 27%);
+  margin-top: 8px;
+  border: 0.5px solid black;
   margin-top: 10px;
-  font-weight: 700;
+  padding: 5px;
+  font-size: 13px;
+}
+.container .textcontainer textarea:focus {
+  outline: none;
+}
+.container .checkbox-container {
+  margin-top: 20px;
+}
+.container .button-container {
+  margin-top: 10px;
+}
+.container .button-container button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  color: white;
+  font-weight: 600;
+  background-color: hsl(169, 82%, 27%);
+  margin-top: 8px;
+}
+
+h2 {
+  color: hsl(169, 82%, 27%);
 }/*# sourceMappingURL=style.css.map */
