@@ -10,77 +10,99 @@ body {
   font-size: 13px;
   letter-spacing: 2px;
 }
-
-main {
+body main {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 150px;
 }
-
-.container {
+body main .container {
   background-color: hsl(0, 0%, 100%);
   width: 460px;
   padding: 25px;
   border-radius: 15px;
 }
-.container .usernameContainer {
+body main .container h2 {
+  color: hsl(169, 82%, 27%);
+}
+body main .container .usernameContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;
 }
-.container .usernameContainer input {
+body main .container .usernameContainer label::after {
+  content: "*";
+  color: hsl(169, 82%, 27%);
+}
+body main .container .usernameContainer input {
   margin-top: 8px;
   padding: 8px;
+  width: 190px;
   border-radius: 5px;
   border: 0.5px solid black;
 }
-.container .usernameContainer input:focus {
+body main .container .usernameContainer input:focus {
   outline: none;
 }
-.container .usernameContainer .lastName input {
-  width: 100%;
+body main .container .usernameContainer .lastName input {
+  width: 200px;
 }
-.container .emailcontainer {
+body main .container .emailcontainer {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-.container .emailcontainer input {
+body main .container .emailcontainer label::after {
+  content: "*";
+  color: hsl(169, 82%, 27%);
+}
+body main .container .emailcontainer input {
   margin-top: 8px;
   padding: 8px;
-  width: 100%;
+  width: 98%;
   border-radius: 5px;
   border: 0.5px solid black;
 }
-.container .emailcontainer input:focus {
+body main .container .emailcontainer input:focus {
   outline: none;
 }
-.container .main-ratio {
+body main .container .main-ratio {
   margin-top: 15px;
+  margin-right: 15px;
 }
-.container .ratio_cont {
+body main .container .main-ratio p::after {
+  content: "*";
+  color: hsl(169, 82%, 27%);
+}
+body main .container .main-ratio .ratio_cont {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.container .ratio_cont .first_ratio {
+body main .container .main-ratio .ratio_cont .first_ratio {
   border: 0.5px solid black;
   padding: 10px;
   border-radius: 5px;
+  width: 190px;
+  margin-right: 20px;
 }
-.container .ratio_cont .second_ratio {
+body main .container .main-ratio .ratio_cont .second_ratio {
   border: 0.5px solid black;
   padding: 10px;
+  width: 200px;
   border-radius: 5px;
 }
-.container .textcontainer {
+body main .container .textcontainer {
   display: flex;
   flex-direction: column;
 }
-.container .textcontainer textarea {
-  width: 100%;
+body main .container .textcontainer label::after {
+  content: "*";
+  color: hsl(169, 82%, 27%);
+}
+body main .container .textcontainer textarea {
+  width: 98%;
   border-radius: 5px;
   margin-top: 8px;
   border: 0.5px solid black;
@@ -88,17 +110,17 @@ main {
   padding: 5px;
   font-size: 13px;
 }
-.container .textcontainer textarea:focus {
+body main .container .textcontainer textarea:focus {
   outline: none;
 }
-.container .checkbox-container {
+body main .container .checkbox-container {
   margin-top: 20px;
 }
-.container .button-container {
+body main .container .button-container {
   margin-top: 10px;
 }
-.container .button-container button {
-  width: 100%;
+body main .container .button-container button {
+  width: 98%;
   padding: 8px;
   border-radius: 5px;
   border: 0.5px solid black;
@@ -106,8 +128,4 @@ main {
   font-weight: 600;
   background-color: hsl(169, 82%, 27%);
   margin-top: 8px;
-}
-
-h2 {
-  color: hsl(169, 82%, 27%);
 }/*# sourceMappingURL=style.css.map */

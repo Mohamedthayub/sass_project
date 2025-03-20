@@ -15,110 +15,136 @@ body{
     font-size: $fontSize;
     // word-spacing: 2px;
     letter-spacing: 2px;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 150px;
-
-}
-.container{
-    background-color: $containerColor;
-    width: 460px;
-    padding: 25px;   
-    border-radius: 15px;
-    
-    .usernameContainer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 10px;
-      
-        input{
-            margin-top: 8px;
-            padding: 8px;
-            border-radius: 5px;
-            border:  0.5px solid black;        
-            &:focus{
-                outline: none;
-            }
-        }
-        .lastName{
-            input{
-                width: 100%;
-            }
-        }
-    }
-    .emailcontainer{
+    main{
         display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        input{
-            margin-top: 8px;
-            padding: 8px;
-            width: 100%;
-            border-radius: 5px;
-            border:  0.5px solid black;
-            &:focus{
-                outline: none;
+        justify-content: center;
+        align-content: center;
+        margin-top: 150px;
+        .container{
+            background-color: $containerColor;
+            width: 460px;
+            padding: 25px;   
+            border-radius: 15px;
+            h2{
+                color: $fontColor;
             }
-        }
+            
+            .usernameContainer{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 10px;
+              
+                label::after{
+                    content: "*";
+                    color: $fontColor;
+                }
+                input{
+                    margin-top: 8px;
+                    padding: 8px;
+                    width: 190px;
+                    border-radius: 5px;
+                    border:  0.5px solid black;        
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .lastName{
+                    input{
+                        width: 200px;
+                    }
+                }
+            }
+            .emailcontainer{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                label::after{
+                    content: "*";
+                    color:$fontColor;
+                }
+                input{
+                    margin-top: 8px;
+                    padding: 8px;
+                    width: 98%;
+                    border-radius: 5px;
+                    border:  0.5px solid black;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                
+            }
+            .main-ratio{
+                margin-top: 15px;
+                margin-right: 15px;
+               
+                p::after{
+                    content: "*";
+                    color: $fontColor;
+                }
+                .ratio_cont{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    
+                    
+                
+                    .first_ratio{
+                        border: 0.5px solid black;
+                        padding: 10px;
+                        border-radius: 5px;
+                        width: 190px;
+                        margin-right: 20px;   
+                    }
+                    .second_ratio{
+                        border: 0.5px solid black;
+                        padding: 10px;
+                        width: 200px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            
+            .textcontainer{
+                label::after{
+                    content: "*";
+                    color:$fontColor;
+                }
+                display: flex;
+                flex-direction: column;
+                textarea{
+                    width: 98%;
+                    border-radius: 5px;
+                    margin-top: 8px;
+                    border:  0.5px solid black;
+                    margin-top: 10px;
+                    padding: 5px;
+                    font-size: $fontSize;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            .checkbox-container{
+                margin-top: 20px;
+            }
+            .button-container{
+                margin-top: 10px;
+                button{
+                    width: 98%;
+                    padding: 8px;
+                    border-radius: 5px;
+                    border:  0.5px solid black;
+                    color: white;
+                    font-weight: 600;
+                    background-color: $fontColor;
+                    margin-top: 8px;
+                }
         
-    }
-    .main-ratio{
-        margin-top: 15px;
-    }
-    .ratio_cont{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        .first_ratio{
-            border: 0.5px solid black;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .second_ratio{
-            border: 0.5px solid black;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    }
-    .textcontainer{
-        display: flex;
-        flex-direction: column;
-        textarea{
-            width: 100%;
-            border-radius: 5px;
-            margin-top: 8px;
-            border:  0.5px solid black;
-            margin-top: 10px;
-            padding: 5px;
-            font-size: $fontSize;
-            &:focus{
-                outline: none;
             }
         }
+    
     }
-    .checkbox-container{
-        margin-top: 20px;
-    }
-    .button-container{
-        margin-top: 10px;
-        button{
-            width: 100%;
-            padding: 8px;
-            border-radius: 5px;
-            border:  0.5px solid black;
-            color: white;
-            font-weight: 600;
-            background-color: $fontColor;
-            margin-top: 8px;
-        }
+}
 
-    }
-}
-h2{
-    color: $fontColor;
-}
