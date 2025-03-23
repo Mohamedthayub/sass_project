@@ -9,9 +9,7 @@ This repository contains various frontend projects built using **SASS (Syntactic
 - A responsive and well-styled contact form using SASS.  
 - Features: Form validation, smooth animations, and modern UI design.  
 
-### 2️⃣ **Notifications Page**  
-📌 **Status:** 🔄 In Progress  
-- A stylish notifications page built with SASS.  
+📌 **Status:** 🔄 Completed  
 - Features: Custom styling, hover effects, and better organization of notifications.  
 
 ## 🎯 Why SASS?  
@@ -25,7 +23,6 @@ This repository contains various frontend projects built using **SASS (Syntactic
 ```bash
 sass_projects/
 │── contact-form-main/       # Contact Form Project
-│── notifications-page-main/ # Notifications Page Project
 │── .github/workflows/       # GitHub Actions (CI/CD)
 │── index.html               # Main entry point
 │── README.md                # Documentation
