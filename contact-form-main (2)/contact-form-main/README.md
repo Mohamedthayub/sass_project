@@ -20,7 +20,7 @@ A responsive and user-friendly contact form built with **HTML, CSS, and SASS**. 
 ## 🚀 Setup & Usage  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/contact-form.git
+   git clone https://github.com/Mohamedthayub/contact-form.git
    ```
 2. Open `index.html` in a browser or use **Live Server** in VS Code.  
 
