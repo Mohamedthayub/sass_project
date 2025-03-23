@@ -135,7 +135,7 @@ body{
                     width: 98%;
                     padding: 8px;
                     border-radius: 5px;
-                    border:  0.5px solid black;
+                    border: none;
                     color: white;
                     font-weight: 600;
                     background-color: $fontColor;
@@ -148,3 +148,65 @@ body{
     }
 }
 
+
+@media screen and (max-width:400px){
+    body{
+        main{
+            flex-direction: column;
+            font-size: 15px;
+            .container{
+                width: 365px;
+                margin: 10px;
+                .usernameContainer{
+                    display: flex;
+                    flex-direction: column;
+
+                    .firstname{
+                        display: flex;
+                        flex-direction: column;
+                        input{
+                            width: 100%;
+                            padding: 10px;
+                        }
+                    }
+                    .lastName{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+                        input{
+                            width: 100%;
+                            padding: 10px;
+                        }
+                    }
+                }
+                .emailcontainer{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        padding: 10px;
+                        width: 100%;
+                    }
+                }
+                .main-ratio{
+                    margin-top: 20px;
+                }
+                .textcontainer{
+                    margin-top: 20px;
+                    input{
+                        height: 500px;
+                    }
+                }
+                
+                .button-container{
+                    button{
+                        padding: 10px;
+                    }
+                }
+            
+            }
+            
+        }
+    }
+
+}

@@ -123,9 +123,62 @@ body main .container .button-container button {
   width: 98%;
   padding: 8px;
   border-radius: 5px;
-  border: 0.5px solid black;
+  border: none;
   color: white;
   font-weight: 600;
   background-color: hsl(169, 82%, 27%);
   margin-top: 8px;
+}
+
+@media screen and (max-width: 400px) {
+  body main {
+    flex-direction: column;
+    font-size: 15px;
+  }
+  body main .container {
+    width: 365px;
+    margin: 10px;
+  }
+  body main .container .usernameContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container .usernameContainer .firstname {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container .usernameContainer .firstname input {
+    width: 100%;
+    padding: 10px;
+  }
+  body main .container .usernameContainer .lastName {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  body main .container .usernameContainer .lastName input {
+    width: 100%;
+    padding: 10px;
+  }
+  body main .container .emailcontainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container .emailcontainer input {
+    padding: 10px;
+    width: 100%;
+  }
+  body main .container .main-ratio {
+    margin-top: 20px;
+  }
+  body main .container .textcontainer {
+    margin-top: 20px;
+  }
+  body main .container .textcontainer input {
+    height: 500px;
+  }
+  body main .container .button-container button {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
